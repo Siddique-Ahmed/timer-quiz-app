@@ -119,6 +119,7 @@ header nav .logo {
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  z-index: 99999;
 }
 nav .logo h1 {
   font-size: 43px;
@@ -153,6 +154,7 @@ nav .logo img {
   justify-content: flex-end;
   list-style: none;
   transition: 0.3s ease-in-out;
+  z-index: 9999;
 }
 .list li {
   margin-right: 30px;
@@ -186,6 +188,7 @@ header nav i {
   color: #fcc822;
   z-index: 9999 !important;
   transition: 0.3s ease-in-out;
+  z-index: 99992;
 }
 /*
 ###############################################################################################
@@ -379,7 +382,6 @@ form .remember .input input {
   min-height: 45px;
   margin-top: 20px;
   border: 1px solid #fcc822;
-  box-shadow: 0 6px 24px #fcc822;
   outline: none;
   cursor: pointer;
   background: #fff;
@@ -387,18 +389,10 @@ form .remember .input input {
   font-size: 18px;
   font-weight: 600;
   transition: 0.3s ease-in-out;
-  animation: btnanimate 3s ease-in-out infinite;
 }
-@keyframes btnanimate {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
+.contentform form button:hover {
+  background-color: #fcc822;
+  color: #fff;
 }
 .contentform .socialAcc {
   display: flex;
@@ -519,13 +513,14 @@ form .remember .input input {
   border: 1px solid #fcc822;
   color: #fcc822;
 }
-.startbox{
+.startbox {
   width: 100%;
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+  z-index: -999;
 }
 .startbox button {
   width: 450px;
@@ -537,32 +532,32 @@ form .remember .input input {
   font-weight: 700;
   color: #fff;
   cursor: pointer;
-  animation: start 5s ease-in-out infinite ; /* infinite ko last mein rakha */
-  transform-origin: center; /* ensure correct rotation */
+  animation: start 5s ease-in-out infinite;
+  transform-origin: center;
 }
 @keyframes start {
   0% {
-      transform: rotateX(0deg);
+    transform: rotateX(0deg);
   }
   50% {
-      transform: rotateX(380deg);
-      background-color: #fff;
-      color: #fcc822;
-      border: 1px solid #fcc822;
+    transform: rotateX(380deg);
+    background-color: #fff;
+    color: #fcc822;
+    border: 1px solid #fcc822;
   }
   75% {
-      transform: rotateX(380deg);
-      background-color: #fff;
-      color: #fcc822;
-      border: 1px solid #fcc822;
+    transform: rotateX(380deg);
+    background-color: #fff;
+    color: #fcc822;
+    border: 1px solid #fcc822;
   }
   100% {
-      transform: rotateX(360deg);
-      background-color: #fcc822;
-      color: #fff;
+    transform: rotateX(360deg);
+    background-color: #fcc822;
+    color: #fff;
   }
 }
-.selectBox{
+.selectBox {
   width: 100%;
   min-height: 100vh;
   display: none;
@@ -570,7 +565,7 @@ form .remember .input input {
   justify-content: center;
   flex-wrap: wrap;
 }
-.selectBox .box{
+.selectBox .box {
   width: 950px;
   min-height: 230px;
   display: flex;
@@ -578,9 +573,8 @@ form .remember .input input {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px 12px;
-  z-index: -9999;
 }
-.selectBox .box button{
+.selectBox .box button {
   width: 400px;
   min-height: 45px;
   margin: 10px 5px;
@@ -597,29 +591,210 @@ form .remember .input input {
   animation: multBtn 4s ease-in-out 2s infinite;
 }
 @keyframes multBtn {
-  0%{
+  0% {
     transform: scale(1);
   }
-  50%{
+  50% {
     transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.selectBox .box button:hover {
+  background: #fff;
+  border: 1px solid #fcc822;
+  color: #fcc822;
+}
+.quizloader {
+  width: 100%;
+  height: 90vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.7)
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quizloader .loaderRound {
+  width: 120px;
+  height: 120px;
+  margin-top: 50px;
+  border-top: 10px solid #fcc822;
+  border-left: 10px solid #fcc822;
+  border-bottom: 10px solid #fcc822;
+  border-right: 10px solid #cccccc65;
+  border-radius: 50%;
+  animation: loaderRound 1s ease-in-out infinite;
+}
+@keyframes loaderRound {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+###############################################################################################
+                                QUIZ SECTIONS STYLING START 
+#############################################################################################
+*/
+
+.section {
+  width: 100%;
+  min-height: 85vh;
+  padding: 10px 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.section .quizBox {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.section .quizBox .questionBox,
+.quizBox .answerBox,
+.quizBox .quizbtn {
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px 8px;
+}
+.quizBox .questionBox {
+  background-color: #fcc822;
+}
+.questionBox h1 {
+  font-size: 28px;
+  color: #fff;
+}
+.quizBox .answerBox button {
+  width: 440px;
+  min-height: 50px;
+  margin: 10px;
+  background-color: #fff;
+  color: #fcc822;
+  font-size: 21px;
+  font-weight: 600;
+  border: 1px solid #fcc822;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.quizBox .answerBox button:hover {
+  background: #fcc822;
+  color: #fff;
+}
+.quizBox .quizbtn button {
+  width: 180px;
+  min-height: 40px;
+  cursor: pointer;
+  background-color: #fcc822;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  transition: 0.3s ease-in-out;
+  margin: 10px 8px;
+}
+.quizBox .quizbtn p {
+  font-size: 21px;
+  font-weight: 700;
+}
+.quizBox .quizbtn p span {
+  color: #fcc822;
+  font-weight: 500;
+}
+.quizBox .quizbtn button:hover {
+  background: transparent;
+  border: 1px solid #fcc822;
+  color: #fcc822;
+}
+.score{
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #Fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0%{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1.1);
   }
   100%{
     transform: scale(1);
   }
 }
-.selectBox .box button:hover{
-  background: #fff;
-  border: 1px solid #fcc822;
-  color: #fcc822;
+
+.score .scoreimg{
+  width: 450px;
+  position: relative;
 }
-
-
-
-
-
-
-
-
+.score .scoreimg img{
+  width: 100%;
+}
+.score .scoreimg h4{
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.score .scoreimg h1{
+  position: absolute;
+  top: 45%;
+  left: 38%;
+  font-size: 80px;
+  color: #fff;
+}
+.score button{
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.score button:hover{
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
 
 
 
@@ -639,6 +814,12 @@ form .remember .input input {
   }
   .hero .herocontent p {
     font-size: 17px;
+  }
+  .section {
+    padding: 10px 15px;
+  }
+  .quizBox .answerBox button {
+    width: 80%;
   }
 }
 @media (max-width: 870px) {
@@ -664,8 +845,23 @@ form .remember .input input {
   .loader .loaderRound {
     margin-top: 1000px;
   }
-  .selectBox .box button{
+  .selectBox .box button {
     width: 310px;
+  }
+  .score{
+    width: 450px;
+  }
+  .score .scoreimg{
+    width: 230px;
+    min-height: 230px;
+  }
+  .score .scoreimg h4{
+    font-size: 21px;
+  }
+  .score .scoreimg h1{
+    font-size: 51px;
+    left: 35%;
+    top: 35%;
   }
 }
 @media (max-width: 740px) {
@@ -750,8 +946,21 @@ form .remember .input input {
     height: 35px;
     font-size: 20px;
   }
-  .selectBox .box button{
+  .selectBox .box button {
     width: 170px;
+  }
+  .quizBox .quizbtn {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .quizBox .quizbtn button {
+    width: 80%;
+  }
+  .quizbtn p {
+    order: -1;
+  }
+  .score{
+    width: 290px;
   }
 }
 @media (max-width: 410px) {
@@ -799,7 +1008,13 @@ form .remember .input input {
   .loader .loaderRound {
     margin-top: 700px;
   }
-  .selectBox .box button{
+  .selectBox .box button {
+    width: 100%;
+  }
+  .section {
+    padding: 30px 0px;
+  }
+  .quizBox .answerBox button {
     width: 100%;
   }
 }
