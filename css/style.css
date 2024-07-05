@@ -729,7 +729,7 @@ form .remember .input input {
   border: 1px solid #fcc822;
   color: #fcc822;
 }
-.score{
+.score {
   width: 790px;
   min-height: 330px;
   border: 1px solid #000;
@@ -737,44 +737,44 @@ form .remember .input input {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 20px #000;
-  background: #Fff;
+  background: #fff;
   position: absolute;
   animation: score 3s ease-in-out alternate;
 }
 @keyframes score {
-  0%{
+  0% {
     transform: scale(0);
   }
-  50%{
+  50% {
     transform: scale(1.1);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
 
-.score .scoreimg{
+.score .scoreimg {
   width: 450px;
   position: relative;
 }
-.score .scoreimg img{
+.score .scoreimg img {
   width: 100%;
 }
-.score .scoreimg h4{
+.score .scoreimg h4 {
   position: absolute;
   top: 20%;
   left: 23%;
   font-size: 40px;
   color: #fff;
 }
-.score .scoreimg h1{
+.score .scoreimg h1 {
   position: absolute;
-  top: 45%;
-  left: 38%;
-  font-size: 80px;
+  top: 30%;
+  left: 43%;
+  font-size: 120px;
   color: #fff;
 }
-.score button{
+.score button {
   align-self: flex-end;
   position: absolute;
   bottom: 5%;
@@ -790,18 +790,11 @@ form .remember .input input {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-.score button:hover{
+.score button:hover {
   background: #fff;
   color: #fcc822;
   border: 1px solid #fcc822;
 }
-
-
-
-
-
-
-
 
 /* ######################## media query ######################## */
 
@@ -848,20 +841,20 @@ form .remember .input input {
   .selectBox .box button {
     width: 310px;
   }
-  .score{
+  .score {
     width: 450px;
   }
-  .score .scoreimg{
+  .score .scoreimg {
     width: 230px;
     min-height: 230px;
   }
-  .score .scoreimg h4{
+  .score .scoreimg h4 {
     font-size: 21px;
   }
-  .score .scoreimg h1{
+  .score .scoreimg h1 {
     font-size: 51px;
-    left: 35%;
-    top: 35%;
+    left: 44%;
+    top: 34%;
   }
 }
 @media (max-width: 740px) {
@@ -959,7 +952,7 @@ form .remember .input input {
   .quizbtn p {
     order: -1;
   }
-  .score{
+  .score {
     width: 290px;
   }
 }

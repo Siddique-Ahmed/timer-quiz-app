@@ -1,368 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QUIZ || APP</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- #################### font awesome link #################### -->
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-  <!-- #################### logout popup #################### -->
-   <div class="logoutPopUp">
-    <h1>DO YOU WANT TO EXIST ?</h1>
-    <div class="btnBox">
-      <button id="btnNO">NO</button>
-      <button id="btnYES">YES</button>
-    </div>
-   </div>
-   <!-- #################### header content #################### -->
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="../img/Hands Graduate.png">
-        <h1>Quiz<span>Grad</span></h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUIZ || APP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- #################### font awesome link #################### -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- #################### logout popup #################### -->
+    <div class="logoutPopUp">
+      <h1>DO YOU WANT TO EXIST ?</h1>
+      <div class="btnBox">
+        <button id="btnNO">NO</button>
+        <button id="btnYES">YES</button>
       </div>
-      <ul class="list">
-        <li><a href="../video pgae/video.html">How it works?</a></li>
-        <li><a href="https://www.instagram.com/codewithfun764/" target="_blank">About us</a></li>
-        <li><a id="btn" class="logout jam" href="#">Log Out</a></li>
-      </ul>
-      <i class="fa-solid fa-bars"></i>
-    </nav>
-  </header>
-<!-- #################### START BOX #################### -->
- <section class="startbox">
-  <button id="start">Start Your Quiz</button>
- </section>
-<!-- #################### SELECTED BOX #################### -->
-<section class="selectBox">
-<div class="box">
-  <button id="gk">General Knowledge</button>
-  <button id="iq">Intelligence Quotient</button>
-  <button id="math">Mathematics</button>
-  <button id="isl">Islamiyat</button>
-  <button id="urdu">Urdu</button>
-  <button id="eng">English</button>
-  <button id="pk">Pak Studies</button>
-  <button id="cs">Computer Science</button>
-  <button id="bio">Biology</button>
-  <button id="che">Chemistry</button>
-  <button id="phy">Physics</button>
-</div>
-</section>
+    </div>
+    <!-- #################### header content #################### -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="../img/Hands Graduate.png" />
+          <h1>Quiz<span>Grad</span></h1>
+        </div>
+        <ul class="list">
+          <li><a href="../video pgae/video.html">How it works?</a></li>
+          <li>
+            <a href="https://www.instagram.com/codewithfun764/" target="_blank"
+              >About us</a
+            >
+          </li>
+          <li><a id="btn" class="logout jam" href="#">Log Out</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </nav>
+    </header>
+    <!-- #################### START BOX #################### -->
+    <section class="startbox">
+      <button id="start">Start Your Quiz</button>
+    </section>
+    <!-- #################### SELECTED BOX #################### -->
+    <section class="selectBox">
+      <div class="box">
+        <button id="gk">General Knowledge</button>
+        <button id="iq">Intelligence Quotient</button>
+        <button id="math">Mathematics</button>
+        <button id="isl">Islamiyat</button>
+        <button id="urdu">Urdu</button>
+        <button id="eng">English</button>
+        <button id="pk">Pak Studies</button>
+        <button id="cs">Computer Science</button>
+        <button id="bio">Biology</button>
+        <button id="che">Chemistry</button>
+        <button id="phy">Physics</button>
+      </div>
+    </section>
 
-<!--
+    <!--
 ###############################################################################################
                                 GENERAL KNOWLEDGE SECTION 
 #############################################################################################
 -->
-<section id="gksection" class="section">
-<div class="quizBox">
-  <div class="questionBox">
-    <h1 id="question">what is javascript ? </h1>
-  </div>
-  <div class="answerBox">
-    <button id="gkoptionA">language</button>
-    <button id="gkoptionB">machine language</button>
-    <button id="gkoptionC">no language</button>
-    <button id="gkoptionD">bachlor language</button>
-  </div>
-  <div class="quizbtn">
-    <button>Previous</button>
-    <p>Time Left : <span>15:00</span></p>
-    <button>Next</button>
-  </div>
-</div>
-<div class="score">
-    <div class="scoreimg">
-      <img src="../img/score.png">
-      <h4>YOUR SCORE</h4>
-      <h1>45</h1>
-    </div>
-    <button>Complete</button>
-  </div>
-</section>
-<!--
+    <section id="gksection" class="section">
+      <div class="quizBox">
+        <div class="questionBox">
+          <h1 id="gkquestion">what is javascript ?</h1>
+        </div>
+        <div class="answerBox gkanswerBox">
+          <button id="gkoptionA">language</button>
+          <button id="gkoptionB">machine language</button>
+          <button id="gkoptionC">no language</button>
+          <button id="gkoptionD">bachlor language</button>
+        </div>
+        <div class="quizbtn">
+          <button id="gkprev">Previous</button>
+          <p>Time Left : <span id="gktimer">15:00</span></p>
+          <button id="gknext">Next</button>
+        </div>
+      </div>
+      <div class="score">
+        <div class="scoreimg">
+          <img src="../img/score.png" />
+          <h4>YOUR SCORE</h4>
+          <h1>45</h1>
+        </div>
+        <button onclick="location.reload()">Complete</button>
+      </div>
+    </section>
+    <!--
 ###############################################################################################
                                 INTELLEGENCE QUOTIENT SECTION 
 #############################################################################################
 -->
-<section id="iqsection" class="section">
-  <div class="quizBox">
-    <div class="questionBox">
-      <h1 id="question">what is javascript ? </h1>
-    </div>
-    <div class="answerBox">
-      <button id="gkoptionA">language</button>
-      <button id="gkoptionB">machine language</button>
-      <button id="gkoptionC">no language</button>
-      <button id="gkoptionD">bachlor language</button>
-    </div>
-    <div class="quizbtn">
-      <button>Previous</button>
-      <p>Time Left : <span>15:00</span></p>
-      <button>Next</button>
-    </div>
-  </div>
-  </section>
-<!--
+    <section id="iqsection" class="section sec">
+      <div class="quizBox">
+        <div class="questionBox">
+          <h1 id="iqquestion">what is javascript ?</h1>
+        </div>
+        <div class="answerBox">
+          <button id="iqoptionA">language</button>
+          <button id="iqoptionB">machine language</button>
+          <button id="iqoptionC">no language</button>
+          <button id="iqoptionD">bachlor language</button>
+        </div>
+        <div class="quizbtn">
+          <button id="iqprev">Previous</button>
+          <p>Time Left : <span id="iqtimer">15:00</span></p>
+          <button id="iqnext">Next</button>
+        </div>
+      </div>
+    </section>
+    <!--
 ###############################################################################################
                                 MATHEMATICS SECTION 
 #############################################################################################
 -->
-<section id="mathsection" class="section">
-  <div class="quizBox">
-    <div class="questionBox">
-      <h1 id="question">what is javascript ? </h1>
-    </div>
-    <div class="answerBox">
-      <button id="gkoptionA">language</button>
-      <button id="gkoptionB">machine language</button>
-      <button id="gkoptionC">no language</button>
-      <button id="gkoptionD">bachlor language</button>
-    </div>
-    <div class="quizbtn">
-      <button>Previous</button>
-      <p>Time Left : <span>15:00</span></p>
-      <button>Next</button>
-    </div>
-  </div>
-  </section>
-<!--
+    <section id="mathsection" class="section sec">
+      <div class="quizBox">
+        <div class="questionBox">
+          <h1 id="mtquestion">what is javascript ?</h1>
+        </div>
+        <div class="answerBox">
+          <button id="mtoptionA">language</button>
+          <button id="mtoptionB">machine language</button>
+          <button id="mtoptionC">no language</button>
+          <button id="mtoptionD">bachlor language</button>
+        </div>
+        <div class="quizbtn">
+          <button id="mtprev">Previous</button>
+          <p>Time Left : <span id="mttimer">15:00</span></p>
+          <button id="mtnext">Next</button>
+        </div>
+      </div>
+    </section>
+    <!--
 ###############################################################################################
                                 ISLAMIYAT SECTION 
 #############################################################################################
 -->
-<section id="islsection" class="section">
-  <div class="quizBox">
-    <div class="questionBox">
-      <h1 id="question">what is javascript ? </h1>
-    </div>
-    <div class="answerBox">
-      <button id="gkoptionA">language</button>
-      <button id="gkoptionB">machine language</button>
-      <button id="gkoptionC">no language</button>
-      <button id="gkoptionD">bachlor language</button>
-    </div>
-    <div class="quizbtn">
-      <button>Previous</button>
-      <p>Time Left : <span>15:00</span></p>
-      <button>Next</button>
-    </div>
-  </div>
-  </section>
-<!--
+    <section id="islsection" class="section sec">
+      <div class="quizBox">
+        <div class="questionBox">
+          <h1 id="isquestion">what is javascript ?</h1>
+        </div>
+        <div class="answerBox">
+          <button id="isoptionA">language</button>
+          <button id="isoptionB">machine language</button>
+          <button id="isoptionC">no language</button>
+          <button id="isoptionD">bachlor language</button>
+        </div>
+        <div class="quizbtn">
+          <button id="isprev">Previous</button>
+          <p>Time Left : <span id="istimer">15:00</span></p>
+          <button id="isnext">Next</button>
+        </div>
+      </div>
+    </section>
+    <!--
 ###############################################################################################
                                 URDU SECTION 
 #############################################################################################
 -->
-<section id="urdusection" class="section">
-  <div class="quizBox">
-    <div class="questionBox">
-      <h1 id="question">what is javascript ? </h1>
-    </div>
-    <div class="answerBox">
-      <button id="gkoptionA">language</button>
-      <button id="gkoptionB">machine language</button>
-      <button id="gkoptionC">no language</button>
-      <button id="gkoptionD">bachlor language</button>
-    </div>
-    <div class="quizbtn">
-      <button>Previous</button>
-      <p>Time Left : <span>15:00</span></p>
-      <button>Next</button>
-    </div>
-  </div>
-  </section>
-<!--
+    <section id="urdusection" class="section sec">
+      <div class="quizBox">
+        <div class="questionBox">
+          <h1 id="urquestion">what is javascript ?</h1>
+        </div>
+        <div class="answerBox">
+          <button id="uroptionA">language</button>
+          <button id="uroptionB">machine language</button>
+          <button id="uroptionC">no language</button>
+          <button id="uroptionD">bachlor language</button>
+        </div>
+        <div class="quizbtn">
+          <button id="urprev">Previous</button>
+          <p>Time Left : <span id="urtimer">15:00</span></p>
+          <button id="urnext">Next</button>
+        </div>
+      </div>
+    </section>
+    <!--
 ###############################################################################################
                                 ENGLISH SECTION 
 #############################################################################################
 -->
-<section id="engsection" class="section">
-  <div class="quizBox">
-    <div class="questionBox">
-      <h1 id="question">what is javascript ? </h1>
-    </div>
-    <div class="answerBox">
-      <button id="gkoptionA">language</button>
-      <button id="gkoptionB">machine language</button>
-      <button id="gkoptionC">no language</button>
-      <button id="gkoptionD">bachlor language</button>
-    </div>
-    <div class="quizbtn">
-      <button>Previous</button>
-      <p>Time Left : <span>15:00</span></p>
-      <button>Next</button>
-    </div>
-  </div>
-  </section>
-<!--
+    <section id="engsection" class="section sec">
+      <div class="quizBox">
+        <div class="questionBox">
+          <h1 id="enquestion">what is javascript ?</h1>
+        </div>
+        <div class="answerBox">
+          <button id="enoptionA">language</button>
+          <button id="enoptionB">machine language</button>
+          <button id="enoptionC">no language</button>
+          <button id="enoptionD">bachlor language</button>
+        </div>
+        <div class="quizbtn">
+          <button id="enprev">Previous</button>
+          <p>Time Left : <span id="entimer">15:00</span></p>
+          <button id="ennext">Next</button>
+        </div>
+      </div>
+    </section>
+    <!--
 ###############################################################################################
                                 PAK STUDIES SECTION 
 #############################################################################################
 -->
-<section id="paksection" class="section">
-  <div class="quizBox">
-    <div class="questionBox">
-      <h1 id="question">what is javascript ? </h1>
-    </div>
-    <div class="answerBox">
-      <button id="gkoptionA">language</button>
-      <button id="gkoptionB">machine language</button>
-      <button id="gkoptionC">no language</button>
-      <button id="gkoptionD">bachlor language</button>
-    </div>
-    <div class="quizbtn">
-      <button>Previous</button>
-      <p>Time Left : <span>15:00</span></p>
-      <button>Next</button>
-    </div>
-  </div>
-  </section>
-<!--
+    <section id="paksection" class="section sec">
+      <div class="quizBox">
+        <div class="questionBox">
+          <h1 id="psquestion">what is javascript ?</h1>
+        </div>
+        <div class="answerBox">
+          <button id="psoptionA">language</button>
+          <button id="psoptionB">machine language</button>
+          <button id="psoptionC">no language</button>
+          <button id="psoptionD">bachlor language</button>
+        </div>
+        <div class="quizbtn">
+          <button id="psprev">Previous</button>
+          <p>Time Left : <span id="pstimer">15:00</span></p>
+          <button id="psnext">Next</button>
+        </div>
+      </div>
+    </section>
+    <!--
 ###############################################################################################
                                 COMPUTER SCIENCE SECTION 
 #############################################################################################
 -->
-<section id="cssection" class="section">
-  <div class="quizBox">
-    <div class="questionBox">
-      <h1 id="question">what is javascript ? </h1>
-    </div>
-    <div class="answerBox">
-      <button id="gkoptionA">language</button>
-      <button id="gkoptionB">machine language</button>
-      <button id="gkoptionC">no language</button>
-      <button id="gkoptionD">bachlor language</button>
-    </div>
-    <div class="quizbtn">
-      <button>Previous</button>
-      <p>Time Left : <span>15:00</span></p>
-      <button>Next</button>
-    </div>
-  </div>
-  </section>
-<!--
+    <section id="cssection" class="section sec">
+      <div class="quizBox">
+        <div class="questionBox">
+          <h1 id="csquestion">what is javascript ?</h1>
+        </div>
+        <div class="answerBox">
+          <button id="csoptionA">language</button>
+          <button id="csoptionB">machine language</button>
+          <button id="csoptionC">no language</button>
+          <button id="csoptionD">bachlor language</button>
+        </div>
+        <div class="quizbtn">
+          <button id="csprev">Previous</button>
+          <p>Time Left : <span id="cstimer">15:00</span></p>
+          <button id="csnext">Next</button>
+        </div>
+      </div>
+    </section>
+    <!--
 ###############################################################################################
                                 BIOLOGY SECTION 
 #############################################################################################
 -->
-<section id="biosection" class="section">
-  <div class="quizBox">
-    <div class="questionBox">
-      <h1 id="question">what is javascript ? </h1>
-    </div>
-    <div class="answerBox">
-      <button id="gkoptionA">language</button>
-      <button id="gkoptionB">machine language</button>
-      <button id="gkoptionC">no language</button>
-      <button id="gkoptionD">bachlor language</button>
-    </div>
-    <div class="quizbtn">
-      <button>Previous</button>
-      <p>Time Left : <span>15:00</span></p>
-      <button>Next</button>
-    </div>
-  </div>
-  </section>
-<!--
+    <section id="biosection" class="section sec">
+      <div class="quizBox">
+        <div class="questionBox">
+          <h1 id="bioquestion">what is javascript ?</h1>
+        </div>
+        <div class="answerBox">
+          <button id="biooptionA">language</button>
+          <button id="biooptionB">machine language</button>
+          <button id="biooptionC">no language</button>
+          <button id="biooptionD">bachlor language</button>
+        </div>
+        <div class="quizbtn">
+          <button id="bioprev">Previous</button>
+          <p>Time Left : <span id="biotimer">15:00</span></p>
+          <button id="bionext">Next</button>
+        </div>
+      </div>
+    </section>
+    <!--
 ###############################################################################################
                                 CHEMISTRY SECTION 
 #############################################################################################
 -->
-<section id="chesection" class="section">
-  <div class="quizBox">
-    <div class="questionBox">
-      <h1 id="question">what is javascript ? </h1>
-    </div>
-    <div class="answerBox">
-      <button id="gkoptionA">language</button>
-      <button id="gkoptionB">machine language</button>
-      <button id="gkoptionC">no language</button>
-      <button id="gkoptionD">bachlor language</button>
-    </div>
-    <div class="quizbtn">
-      <button>Previous</button>
-      <p>Time Left : <span>15:00</span></p>
-      <button>Next</button>
-    </div>
-  </div>
-  </section>
-<!--
+    <section id="chesection" class="section sec">
+      <div class="quizBox">
+        <div class="questionBox">
+          <h1 id="chequestion">what is javascript ?</h1>
+        </div>
+        <div class="answerBox">
+          <button id="cheoptionA">language</button>
+          <button id="cheoptionB">machine language</button>
+          <button id="cheoptionC">no language</button>
+          <button id="cheoptionD">bachlor language</button>
+        </div>
+        <div class="quizbtn">
+          <button id="cheprev">Previous</button>
+          <p>Time Left : <span id="chetimer">15:00</span></p>
+          <button id="chenext">Next</button>
+        </div>
+      </div>
+    </section>
+    <!--
 ###############################################################################################
                                 PHYSICS SECTION 
 #############################################################################################
 -->
-<section id="physection" class="section">
-  <div class="quizBox">
-    <div class="questionBox">
-      <h1 id="question">what is javascript ? </h1>
-    </div>
-    <div class="answerBox">
-      <button id="gkoptionA">language</button>
-      <button id="gkoptionB">machine language</button>
-      <button id="gkoptionC">no language</button>
-      <button id="gkoptionD">bachlor language</button>
-    </div>
-    <div class="quizbtn">
-      <button>Previous</button>
-      <p>Time Left : <span>15:00</span></p>
-      <button>Next</button>
-    </div>
-  </div>
-  </section>
+    <section id="physection" class="section sec">
+      <div class="quizBox">
+        <div class="questionBox">
+          <h1 id="pyquestion">what is javascript ?</h1>
+        </div>
+        <div class="answerBox">
+          <button id="phyoptionA">language</button>
+          <button id="phyoptionB">machine language</button>
+          <button id="phyoptionC">no language</button>
+          <button id="phyoptionD">bachlor language</button>
+        </div>
+        <div class="quizbtn">
+          <button id="phyprev">Previous</button>
+          <p>Time Left : <span id="phytimer">15:00</span></p>
+          <button id="phynext">Next</button>
+        </div>
+      </div>
+    </section>
 
+    <!-- #################### LOADER BOX #################### -->
+    <section class="quizloader">
+      <div class="loaderRound"></div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- #################### LOADER BOX #################### -->
- <section class="quizloader">
-  <div class="loaderRound"></div>
-</section>
-
-  <!-- #################### script file #################### -->
-   <script src="../script file/script.js"></script>
-   <script src="../script file/quiz.js"></script>
-</body>
-</html> 
+    <!-- #################### script file #################### -->
+    <script src="../script file/script.js"></script>
+    <script src="../script file/quiz.js"></script>
+  </body>
+</html>
