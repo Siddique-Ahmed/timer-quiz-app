@@ -647,7 +647,6 @@ form .remember .input input {
                                 QUIZ SECTIONS STYLING START 
 #############################################################################################
 */
-
 .section {
   width: 100%;
   min-height: 85vh;
@@ -729,6 +728,7 @@ form .remember .input input {
   border: 1px solid #fcc822;
   color: #fcc822;
 }
+/* ####################### general knowledge score ################### */
 .score {
   width: 790px;
   min-height: 330px;
@@ -752,7 +752,6 @@ form .remember .input input {
     transform: scale(1);
   }
 }
-
 .score .scoreimg {
   width: 450px;
   position: relative;
@@ -795,6 +794,727 @@ form .remember .input input {
   color: #fcc822;
   border: 1px solid #fcc822;
 }
+
+/* ####################### intillegence quoitent score ################### */
+.iqscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: iqscore 3s ease-in-out alternate;
+}
+@keyframes iqscore {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.iqscore .iqscoreimg {
+  width: 450px;
+  position: relative;
+}
+.iqscore .iqscoreimg img {
+  width: 100%;
+}
+.iqscore .iqscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.iqscore .iqscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  font-size: 120px;
+  color: #fff;
+}
+.iqscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.iqscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### Math score ################### */
+.mtscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.mtscore .mtscoreimg {
+  width: 450px;
+  position: relative;
+}
+.mtscore .mtscoreimg img {
+  width: 100%;
+}
+.mtscore .mtscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.mtscore .mtscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  font-size: 120px;
+  color: #fff;
+}
+.mtscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.mtscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### islamiyat score ################### */
+.islscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.islscore .islscoreimg {
+  width: 450px;
+  position: relative;
+}
+.islscore .islscoreimg img {
+  width: 100%;
+}
+.islscore .islscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.islscore .islscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  font-size: 120px;
+  color: #fff;
+}
+.islscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.islscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### urdu score ################### */
+.urscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.urscore .urscoreimg {
+  width: 450px;
+  position: relative;
+}
+.urscore .urscoreimg img {
+  width: 100%;
+}
+.urscore .urscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.urscore .urscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  font-size: 120px;
+  color: #fff;
+}
+.urscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.urscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### english score ################### */
+.enscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.enscore .enscoreimg {
+  width: 450px;
+  position: relative;
+}
+.enscore .enscoreimg img {
+  width: 100%;
+}
+.enscore .enscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.enscore .enscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+  font-size: 120px;
+  color: #fff;
+}
+.enscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.enscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### pak studies score ################### */
+.psscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.psscore .psscoreimg {
+  width: 450px;
+  position: relative;
+}
+.psscore .psscoreimg img {
+  width: 100%;
+}
+.psscore .psscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.psscore .psscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+  font-size: 120px;
+  color: #fff;
+}
+.psscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.psscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### computer science score ################### */
+.csscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.csscore .csscoreimg {
+  width: 450px;
+  position: relative;
+}
+.csscore .csscoreimg img {
+  width: 100%;
+}
+.csscore .csscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.csscore .csscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+  font-size: 120px;
+  color: #fff;
+}
+.csscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.csscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### biology score ################### */
+.bioscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bioscore .bioscoreimg {
+  width: 450px;
+  position: relative;
+}
+.bioscore .bioscoreimg img {
+  width: 100%;
+}
+.bioscore .bioscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.bioscore .bioscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+  font-size: 120px;
+  color: #fff;
+}
+.bioscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.bioscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### chemistry score ################### */
+.chescore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.chescore .chescoreimg {
+  width: 450px;
+  position: relative;
+}
+.chescore .chescoreimg img {
+  width: 100%;
+}
+.chescore .chescoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.chescore .chescoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+  font-size: 120px;
+  color: #fff;
+}
+.chescore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.chescore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### physics score ################### */
+.physcore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.physcore .physcoreimg {
+  width: 450px;
+  position: relative;
+}
+.physcore .physcoreimg img {
+  width: 100%;
+}
+.physcore .physcoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.physcore .physcoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  font-size: 120px;
+  color: #fff;
+}
+.physcore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.physcore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ######################## media query ######################## */
 
@@ -852,6 +1572,168 @@ form .remember .input input {
     font-size: 21px;
   }
   .score .scoreimg h1 {
+    font-size: 51px;
+    left: 34%;
+    top: 34%;
+  }
+  /* ########### iq score ############## */
+  .iqscore {
+    width: 450px;
+  }
+  .iqscore .iqscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .iqscore .iqscoreimg h4 {
+    font-size: 21px;
+  }
+  .iqscore .iqscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+
+  /* ########### math score ############## */
+  .mtscore {
+    width: 450px;
+  }
+  .mtscore .mtscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .mtscore .mtscoreimg h4 {
+    font-size: 21px;
+  }
+  .mtscore .mtscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### islamiyat score ############## */
+  .islscore {
+    width: 450px;
+  }
+  .islscore .islscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .islscore .islscoreimg h4 {
+    font-size: 21px;
+  }
+  .islscore .islscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### urdu score ############## */
+  .urscore {
+    width: 450px;
+  }
+  .urscore .urscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .urscore .urscoreimg h4 {
+    font-size: 21px;
+  }
+  .urscore .urscoreimg h1 {
+    font-size: 51px;
+    left: 35%;
+    top: 34%;
+  }
+
+  /* ########### english score ############## */
+  .enscore {
+    width: 450px;
+  }
+  .enscore .enscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .enscore .enscoreimg h4 {
+    font-size: 21px;
+  }
+  .enscore .enscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### pak studies score ############## */
+  .psscore {
+    width: 450px;
+  }
+  .psscore .psscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .psscore .psscoreimg h4 {
+    font-size: 21px;
+  }
+  .psscore .psscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### computer science score ############## */
+  .csscore {
+    width: 450px;
+  }
+  .csscore .csscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .csscore .csscoreimg h4 {
+    font-size: 21px;
+  }
+  .csscore .csscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### biology score ############## */
+  .bioscore {
+    width: 450px;
+  }
+  .bioscore .bioscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .bioscore .bioscoreimg h4 {
+    font-size: 21px;
+  }
+  .bioscore .bioscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### chemistry score ############## */
+  .chescore {
+    width: 450px;
+  }
+  .chescore .chescoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .chescore .chescoreimg h4 {
+    font-size: 21px;
+  }
+  .chescore .chescoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### physics score ############## */
+  .physcore {
+    width: 450px;
+  }
+  .physcore .physcoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .physcore .physcoreimg h4 {
+    font-size: 21px;
+  }
+  .physcore .physcoreimg h1 {
     font-size: 51px;
     left: 44%;
     top: 34%;
@@ -953,6 +1835,46 @@ form .remember .input input {
     order: -1;
   }
   .score {
+    width: 290px;
+  }
+  /* ######### iq score ########## */
+  .iqscore {
+    width: 290px;
+  }
+  /* ########### math ################ */
+  .mtscore {
+    width: 290px;
+  }
+  /* ########### islamiyat ################ */
+  .islscore {
+    width: 290px;
+  }
+  /* ########### urdu ################ */
+  .urscore {
+    width: 290px;
+  }
+  /* ########### english ################ */
+  .enscore {
+    width: 290px;
+  }
+  /* ########### pak studies ################ */
+  .psscore {
+    width: 290px;
+  }
+  /* ########### computer science ################ */
+  .csscore {
+    width: 290px;
+  }
+  /* ########### biology ################ */
+  .bioscore {
+    width: 290px;
+  }
+  /* ########### chemistry ################ */
+  .chescore {
+    width: 290px;
+  }
+  /* ########### physics ################ */
+  .physcore {
     width: 290px;
   }
 }
